@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>C in HTML:2</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>2. String Handelling<br><p style="font-size:15;">NAVIGATION</p>
+<p style="font-size:12;">
+Go back to: 
+<button style="background-color: grey;"><a href="index.html" style="color:white;">Table of Content</a></button>
+</p>
+<p style="font-size:12;">Previous: 
+<button style="background-color: grey;"><a href="simplec.html" style="color:white;">1. A Simple C Program to Find Area of a Circle</a></button></p>
+
+<p style="font-size:12;">Next: 
+<button style="background-color: grey;"><a href="controlstructure.html" style="color:white;">3. C Program Showcasing use of Some Control Structures</a></button></p>
+
+</h1>
+<hr>
+<div>
+<h4>Code:</h4>
+<pre>
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+int c1,c2,n1,n2;
+char a[999],b[99],x[999],y[99];
+printf("Enter one string: ");
+scanf("%s",a);
+printf("Enter another string: ");
+scanf("%s",b);
+n1=strlen(a);
+printf("First string has %d characters\n",n1);
+printf("Second string has %d characters\n",strlen(b));
+strcpy(x,a);
+printf("String copied on x is %s\n",x);
+printf("String copied on y is %s\n",strcpy(y,b));
+c1= strcmp(a,b);
+if(c1==0)
+{printf("a and b Both same string\n");}
+else {printf("a and b different string\n");}
+strrev(x);
+printf("Reverse of string x is %s\n", x);
+printf("Reverse of string y is %s\n", strrev(y));
+strcat(a,b);
+printf("Joined string of a and b is %s \n",a);
+printf("Joined string of x and y is %s\n",strcat(x,y));
+strupr(a);
+printf("Uppercase is %s\n",a);
+printf("Lowercase is %s\n",strlwr(x));
+return 0;
+}
+</pre>
+
+<h4>Output:</h4>
+<img src="stringhandellingop.png" alt="Output of String Handelling">
+<br><br>
+</div>
+
+</body>
+</html>

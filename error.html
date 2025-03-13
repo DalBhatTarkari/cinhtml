@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>C in HTML:4</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>4. Error in C Program<br><p style="font-size:15;">NAVIGATION</p>
+<p style="font-size:12;">
+Go back to: 
+<button style="background-color: grey;"><a href="index.html" style="color:white;">Table of Content</a></button>
+<p style="font-size:12;">Previous: 
+<button style="background-color: grey;"><a href="controlstructure.html" style="color:white;">3. C Program Showcasing use of Some Control Structures</a></button></p>
+</p>
+</h1>
+
+<hr>
+<div>
+<h2>Syntax Error</h2>
+<p>These occur when the code violates the rules of the C language and are detected during compilation.</p>
+<h4>Code:</h4>
+<pre>
+#include<stdio.h>
+int main()
+{
+    printf("Hello, world")
+}
+</pre>
+<h4>Output:</h4>
+<img src="syntaxerror.png" alt="Syntax Error">
+<br><br>
+</div>
+<br>
+
+<hr>
+<div>
+<h2>Runtime Error</h2>
+<p>These occur when the program is executed. The program may compile successfully but crash or behave unexpectedly at runtime.</p>
+<h4>Code:</h4>
+<pre>
+#include<stdio.h>
+int main()
+{
+    int x;
+    x=5/0;
+}
+</pre>
+<h4>Output:</h4>
+<img src="runtimeerror.png" alt="Runtime Error">
+<br><br>
+</div>
+<br>
+
+<hr>
+<div>
+<h2>Logical  Error</h2>
+<p>The program runs without crashing, but the output is incorrect due to flawed logic due to the programmer.</p>
+<h4>Code:</h4>
+<pre>
+#include<stdio.h>
+int main()
+{
+    int a=10,b=5;
+    printf("Sum is %d",a-b);
+}
+
+</pre>
+<h4>Output:</h4>
+<img src="logicalerror.png" alt="Logical Error">
+<br><br>
+</div>
+<br>
+
+<hr>
+<div>
+<h2>Semantics  Error</h2>
+<p>When a statement is syntactically correct but has no meaning, semantic errors occur. This is similar to grammatical errors.</p>
+<h4>Code:</h4>
+<pre>
+#include<stdio.h>
+void main()
+{
+    int a=10, b=10, sum=0;
+    a+b=sum;
+}
+
+
+</pre>
+<h4>Output:</h4>
+<img src="semanticserror.png" alt="Logical Error">
+<br><br>
+</div>
+<br>
+
+<hr>
+<div>
+<h2>Linker  Error</h2>
+<p>Occur when the compiler successfully compiles individual source files but fails to generate an executable due to missing or undefined references.</p>
+<h4>Code:</h4>
+<pre>
+int main()
+{
+int i;
+char week[10];
+printf("Enter a Day of the Week: ");
+scanf("%s",&week);
+for (i=0;week[i]!='\0' ; i++)
+    week[i]=toupper(week[i]);
+if (strcmp(week , "SATURDAY") == 0 )
+    printf("Holiday");
+if (strcmp(week , "SATURDAY") != 0)
+    printf("Working Day");
+return 0;
+}
+</pre>
+<h4>Output:</h4>
+<img src="linkererror.png" alt="Logical Error">
+<br><br>
+</div>
+<br>
