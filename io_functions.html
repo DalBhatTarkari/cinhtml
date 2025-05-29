@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>C in HTML:5</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>5. Formated/Unformatted I/O Functions<br><p style="font-size:15;">NAVIGATION</p>
+<p style="font-size:12;">
+Go back to: 
+<button style="background-color: grey;"><a href="index.html" style="color:white;">Table of Content</a></button>
+</p>
+<p style="font-size:12;">Previous: 
+<button style="background-color: grey;"><a href="error.html" style="color:white;">4. C Program Showcasing Some Errors</a></button></p>
+<p style="font-size:12;">Next: 
+<button style="background-color: grey;"><a href="patterns.html" style="color:white;">6. Patterns </a></button></p>
+
+</h1>
+<hr>
+
+<div>
+
+<h2>Formatted I/O functions</h2>
+<p><h4>Code:</h4>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+int n;
+printf("Enter a number: ");
+scanf("%d",&n);
+printf("You entered %d",n);
+return 0;
+}
+</pre>
+<h4>Output</h4>
+<img src="formattedio.png" alt="Output of formatted io">
+</p>
+<br>
+</div>
+<br>
+
+<hr>
+
+<div>
+
+<h2>Unformatted I/O functions</h2>
+<p><h4>Code:</h4>
+<pre>
+#include &lt;stdio.h&gt;
+int main() 
+{
+char ch1;
+printf("Enter a character: ");
+ch1 = getchar();
+printf("You entered: ");
+putchar(ch1);
+return 0;
+}
+</pre>
+<h4>Output</h4>
+<img src="unformattedio.png" alt="Output of unformatted io">
+</p>
+<br>
+</div>
+<br>
